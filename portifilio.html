@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SHIV K | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        nav {
+            background: #16a34a;
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+            min-height: 90vh;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero-text h2 {
+            color: #16a34a;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #16a34a;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .hero-image img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #16a34a;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #16a34a;
+        }
+
+        .about-card,
+        .contact-card {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-grid,
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card,
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .skill-card:hover,
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3,
+        .skill-card h3 {
+            color: #16a34a;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .project-btn {
+            border: none;
+            background: #16a34a;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #16a34a;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media(max-width:768px) {
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">SHIV K</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <h1>BALA SIVA KATAM</h1>
+
+            <h2>JAVA FULL STACK DEVELOPER</h2>
+
+            <p>
+                Passionate Computer Science student interested in Java,
+                web development, and building responsive applications.
+            </p>
+
+            <a href="#projects" class="btn">View Projects</a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="https://media.licdn.com/dms/image/v2/D4E35AQEIs5ylXsQ5BQ/profile-framedphoto-shrink_800_800/B4EZohZFx6HEAg-/0/1761496817033?e=1778745600&v=beta&t=RCVgwpU6QRlJe0fhsFNYBndBF6oGr0j_YZYV80VJ3lE"
+                alt="Profile Photo">
+
+        </div>
+
+    </section>
+
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-card">
+
+            <p>
+                I am a Java Full Stack Developer from Tirupati, Andhra Pradesh. My skills include HTML, CSS, JavaScript,
+                Java, and MySQL.I have worked on academic and personal projects that helped me improve my
+                problem-solving and programming skills. I am a quick learner, adaptable to new environments, and always
+                eager to explore modern technologies in software development. My goal is to build innovative
+                applications and grow as a successful full stack developer.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section id="skills">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <h3>Java</h3>
+            </div>
+            <div class="skill-card">
+                <h3>MySQL</h3>
+            </div>
+            <div class="skill-card">
+                <h3>GitHub</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+
+                <h3>E-Commerce Website</h3>
+
+                <p>
+                    E-commerce website is a responsive online shopping platform that allows users to browse products,
+                    add items to cart, and purchase products digitally.
+                </p>
+
+                <button onclick="fun1()" class="project-btn">
+                    View Project
+                </button>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Calculator App</h3>
+
+                <p>
+                    Calculator is a simple web application used to perform fast and accurate mathematical operations
+                    like addition, subtraction, multiplication, and division.
+                </p>
+
+                <button onclick="fun()" class="project-btn">
+                    View Project
+                </button>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Bank Management System</h3>
+
+                <p>
+                    Online Bank Management System is a web-based application that allows users to securely manage bank
+                    accounts, transfer money, deposit, withdraw, and view transaction history online.
+                </p>
+
+                <button onclick="studentProject()" class="project-btn">
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-card">
+
+            <div class="contact-info">
+
+                <a href="mailto:shivkatam08@gmail.com">📧 shivkatam08@gmail.com</a>
+
+                <a href="https://github.com/balasiva08-ship-it" target="_blank">
+                    💻 GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/bala-siva-naidu-katam-779129314/" target="_blank">
+                    🔗 LinkedIn
+                </a>
+
+                <p>📍 Tirupati, Andhra Pradesh</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 BALA SIVA KATAM
+    </footer>
+
+    <script>
+
+        function fun() {
+            window.location.assign("C:\\Users\\Asus\\OneDrive\\Desktop\\web8\\JavaScript\\calculator\\calculator.html");
+        }
+
+        function fun1() {
+            window.location.assign("C:\\Users\\Asus\\OneDrive\\Desktop\\web8\\CSS\\flipkart.html");
+        }
+
+        function studentProject() {
+
+            window.location.assign("C:\\Users\\Asus\\OneDrive\\Desktop\\web8\\JavaScript\\index (1).html");
+        }
+
+    </script>
+
+</body>
+
+</html>
+```
